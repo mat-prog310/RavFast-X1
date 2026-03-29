@@ -4,7 +4,28 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 // src/version.h
-#define CLIENT_VERSION_MAJOR 1
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/**",
+                "/usr/include",
+                "/usr/include/boost",
+                "/usr/local/include"
+            ],
+            "defines": [
+                "HAVE_CONFIG_H"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}#define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 0
 #define CLIENT_VERSION_BUILD 0
