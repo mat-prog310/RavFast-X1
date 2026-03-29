@@ -3,12 +3,17 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_VERSION_H
-#define RAVEN_VERSION_H
+// src/version.h
+#define CLIENT_VERSION_MAJOR 1
+#define CLIENT_VERSION_MINOR 0
+#define CLIENT_VERSION_REVISION 0
+#define CLIENT_VERSION_BUILD 0
 
-/**
- * network protocol versioning
- */
+#define CLIENT_VERSION_SUFFIX "-rfx"
+
+// Nom complet du client
+static const std::string CLIENT_NAME = "RaveFastX1";
+static const std::string CLIENT_DESC = "RaveFast-X1 Core";
 
 static const int PROTOCOL_VERSION = 70028;
 
@@ -61,4 +66,4 @@ static const int ASSETDATA_VERSION_UPDATED = 70020;
 static const int MESSAGING_RESTRICTED_ASSETS_VERSION = 70026;
 
 
-#endif // RAVEN_VERSION_H
+
