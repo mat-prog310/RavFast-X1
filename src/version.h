@@ -3,29 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-// src/version.h
-{
-    "configurations": [
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/src",
-                "${workspaceFolder}/src/**",
-                "/usr/include",
-                "/usr/include/boost",
-                "/usr/local/include"
-            ],
-            "defines": [
-                "HAVE_CONFIG_H"
-            ],
-            "compilerPath": "/usr/bin/g++",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "linux-gcc-x64"
-        }
-    ],
-    "version": 4
-}#define CLIENT_VERSION_MAJOR 1
+#ifndef VERSION_H
+#define VERSION_H
+
+#define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 0
 #define CLIENT_VERSION_BUILD 0
@@ -85,6 +66,8 @@ static const int ASSETDATA_VERSION_UPDATED = 70020;
 
 //! In this version, 'rip5 (messaging and restricted assets)' was introduced
 static const int MESSAGING_RESTRICTED_ASSETS_VERSION = 70026;
+
+#endif // VERSION_H
 
 
 
